@@ -1,4 +1,4 @@
 ﻿{
-    "connectionString": "mongodb://localhost/mefidodata",
+    "connectionString": "mongodb://localhost/MefidoDoc",
     "secret": "TOKENS FOR MEFIDO SERVICE COURTESY HSEJAR"
 }

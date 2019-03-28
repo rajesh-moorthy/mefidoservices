@@ -12,7 +12,7 @@ module.exports = {
 
 
 async function getAllCountries() {
-    return await Country.find().select('-hash');
+    return await Country.find().select(any);
 }
 
 async function getCountryById(id) {

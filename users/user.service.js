@@ -1,5 +1,5 @@
-﻿const config = require('config.json');
-const jwt = require('jsonwebtoken');
+﻿var config = require('config.json');
+var  jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const db = require('_helpers/db');
 const User = db.User;
@@ -23,7 +23,7 @@ async function authenticate({ username, password }) {
             token
         };
     }
-}
+    }
 
 async function getAll() {
     return await User.find().select('-hash');
